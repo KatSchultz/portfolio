@@ -17,11 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="h-screen">
+        <div className="h-screen w-screen flex flex-col">
           <header className="w-full justify-between flex p-2">
             <Link href="/">
               <div className="flex justify-end items-center">
-                <h2 className="pr-2 text-lg font-semibold">Katie Schultz</h2>
+                <div className="h-6 w-6 rounded-full bg-my-teal pr-4"></div>
+                <h2 className="px-2 text-lg font-semibold">Katie Schultz</h2>
                 <p>React Developer</p>
               </div>
             </Link>
@@ -39,7 +40,7 @@ export default function RootLayout({
               </ul>
             </div>
           </header>
-          <div className="p-2">{children}</div>
+          <div className="p-2 flex h-full">{children}</div>
         </div>
       </body>
     </html>
