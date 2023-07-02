@@ -1,5 +1,6 @@
 import Image from "next/image";
 import headshot from "../../public/images/KatieSchultzHeadshot.jpg";
+import NavBubbles from "./components/NavBubbles/NavBubbles";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <div>
           <Image
             src={headshot}
-            alt="picture of Katie Schultz"
+            alt="Picture of Katie Schultz"
             width={400}
             height={400}
             className="rounded-full"
@@ -20,6 +21,7 @@ export default function Home() {
             My name is Katie Schultz. After studying interior design and working
             in real estate, I decided{" "}
           </p>
+          <NavBubbles />
         </div>
       </div>
     </div>
