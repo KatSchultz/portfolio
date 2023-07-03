@@ -3,9 +3,9 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import MobileMenu from "./components/MobileMenu";
+import NavMenu from "./components/navigation/NavMenu";
 import { useState } from "react";
-import Hamburger from "./components/hamburger/Hamburger";
+import Hamburger from "./components/navigation/Hamburger/Hamburger";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,10 +38,10 @@ export default function RootLayout({
               onClick={() => setMenuDisplay(!menuDisplay)}
             >
               <Hamburger isOpen={menuDisplay} />
-              {menuDisplay && <MobileMenu />}
+              {menuDisplay && <NavMenu />}
             </div>
             <div className="hidden md:flex">
-              <MobileMenu />
+              <NavMenu />
             </div>
           </header>
           <div className="p-2 flex h-full">{children}</div>

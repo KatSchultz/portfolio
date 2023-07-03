@@ -1,6 +1,6 @@
 import Image from "next/image";
 import headshot from "../../public/images/KatieSchultzHeadshot.jpg";
-import NavBubbles from "./components/NavBubbles/NavBubbles";
+import NavBubbles from "./components/navigation/NavBubbles/NavBubbles";
 
 export default function Home() {
   return (

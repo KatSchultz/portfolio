@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/NavBubbles"
+    "src/app/components/navigation/NavBubbles"
   ],
   "exclude": ["node_modules"]
 }
