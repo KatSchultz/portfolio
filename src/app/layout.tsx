@@ -1,11 +1,9 @@
-"use client";
-
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import NavMenu from "./components/navigation/NavMenu";
 import { useState } from "react";
-import Hamburger from "./components/navigation/Hamburger/Hamburger";
+import HamburgerMenu from "./components/navigation/HamburgerMenu/HamburgerMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +17,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [menuDisplay, setMenuDisplay] = useState<boolean>(false);
-
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -33,12 +29,8 @@ export default function RootLayout({
                 <p>Developer</p>
               </div>
             </Link>
-            <div
-              className="flex flex-row-reverse md:hidden"
-              onClick={() => setMenuDisplay(!menuDisplay)}
-            >
-              <Hamburger isOpen={menuDisplay} />
-              {menuDisplay && <NavMenu />}
+            <div className="flex flex-row-reverse md:hidden">
+              <HamburgerMenu />
             </div>
             <div className="hidden md:flex">
               <NavMenu />

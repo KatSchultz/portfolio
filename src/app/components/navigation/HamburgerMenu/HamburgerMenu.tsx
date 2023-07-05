@@ -1,11 +1,12 @@
-import React from "react";
-import "./Hamburger.css";
+"use client";
 
-interface HamburberProps {
-  isOpen: boolean;
-}
+import React, { useState } from "react";
+import "./HamburgerMenu.css";
+import NavMenu from "../NavMenu";
 
-export default function Hamburger({ isOpen }: HamburberProps) {
+export default function HamburgerMenu() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const stylesBurger1 = {
     transform: `${isOpen ? "rotate(45deg)" : "rotate(0)"}`,
   };
@@ -18,7 +19,11 @@ export default function Hamburger({ isOpen }: HamburberProps) {
   };
 
   return (
-    <div className="hamburger w-8 h-8 flex justify-around flex-col z-10 ">
+    <div
+      className="hamburger w-8 h-8 flex justify-around flex-col z-10 "
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      {isOpen && <NavMenu />}
       <div
         style={stylesBurger1}
         className="burger burger1 w-8 h-1 bg-slate-900 "
