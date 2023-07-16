@@ -9,8 +9,8 @@ export default function ResumePage() {
   return (
     <div className="flex items-center flex-col w-full">
       <h2 className="font-bold text-3xl mb-2">RESUME</h2>
-      <div className="flex flex-col items-center md:max-w-3xl">
-        <h3 className="font-bold text-xl">Professional Experience</h3>
+      <div className="flex flex-col items-center md:max-w-3xl lg:max-w-5xl">
+        <h3 className="font-bold text-xl mt-4">Professional Experience</h3>
         <Divider />
         {workExperience.map((job) => (
           <div key={job.title}>
@@ -25,7 +25,7 @@ export default function ResumePage() {
             </div>
             <ul className="list-disc list-inside">
               {job.description.map((detail, index) => (
-                <li className="mb-2" key={index}>
+                <li className="my-2" key={index}>
                   {detail}
                 </li>
               ))}
@@ -33,7 +33,7 @@ export default function ResumePage() {
           </div>
         ))}
 
-        <h3 className="font-bold text-xl">Skills</h3>
+        <h3 className="font-bold text-xl  mt-4">Skills</h3>
         <Divider />
 
         <section className="flex w-full flex-wrap">
@@ -47,12 +47,15 @@ export default function ResumePage() {
           ))}
         </section>
 
-        <h3 className="font-bold text-xl">Education</h3>
+        <h3 className="font-bold text-xl mt-4">Education</h3>
         <Divider />
 
         <section className="flex w-full flex-col">
           {education.map((school) => (
-            <div key={school.name} className="flex justify-between pb-4">
+            <div
+              key={school.name}
+              className="flex flex-col sm:flex-row sm:justify-between   pb-4"
+            >
               <div>
                 <h5 className="font-bold">{school.name}</h5>
                 <p className="font-bold">{school.program}</p>

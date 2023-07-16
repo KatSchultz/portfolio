@@ -20,6 +20,9 @@ module.exports = {
       "1/2": "50%",
       "1/4": "25%",
     },
+    // screens: {
+    //   sm: { min: "640px", max: "767px" },
+    // },
   },
   plugins: [],
 };
