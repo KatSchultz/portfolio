@@ -4,6 +4,7 @@ import { projects } from "../config/projectDetails";
 import photographySite from "../../../public/images/photography-site-square.png";
 import margesBar from "../../../public/images/marges-bar-square.png";
 import cardSharks from "../../../public/images/card-sharks-square.png";
+import portfolio from "../../../public/images/portfolio-square.png";
 
 const projectImage = (name: string) => {
   switch (name) {
@@ -13,6 +14,8 @@ const projectImage = (name: string) => {
       return margesBar;
     case "Card Sharks":
       return cardSharks;
+    case "My Portfolio":
+      return portfolio;
 
     default:
       return photographySite;

@@ -9,15 +9,22 @@ export const projects = [
   {
     name: "Marge's Bar",
     description:
-      "A local sports bar owner needed to update his website. I created a new, clean layout using TypeScript, React, and Google Maps API",
+      "A local sports bar owner needed to update his website. I created a new, clean layout using TypeScript, React, Tailwind, and Google Maps API",
     githubLink: "https://github.com/KatSchultz/marges-bar",
     liveLink: "https://marges-bar.vercel.app/",
   },
   {
     name: "Card Sharks",
     description:
-      "This is the second iteration of a card matching game. My first version was built with simple HTML, CSS, and JavaScript. After completing my bootcamp, I rebuilt the app using TypeScript, React, and the Material UI component library.",
+      "This is my third iteration of a card matching game. My first version was built as a group project using HTML, CSS, and JavaScript. After completing my bootcamp, I rebuilt the app using TypeScript and React. When my first developer job used Redux, I refactored again to replace most prop passing with Redux state management.",
     githubLink: "https://github.com/KatSchultz/react-card-sharks",
     liveLink: "https://react-card-sharks-katschultz.vercel.app/",
+  },
+  {
+    name: "My Portfolio",
+    description:
+      "I heard Next.js had a new style of routing, so this portfolio was created with Next. I also used Tailwind, Typescript, and hosted on my own domain. Thanks for looking!",
+    githubLink: "https://github.com/KatSchultz/portfolio",
+    liveLink: "/",
   },
 ];
