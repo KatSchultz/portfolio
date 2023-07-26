@@ -44,11 +44,15 @@ export default function ContactForm() {
         name="message"
         className="border-2 border-slate-700 my-2 w-full "
       />
-      <input
-        type="submit"
-        value="Send"
-        className="border-2 border-slate-700 my-2"
-      />
+      <div className="flex items-center">
+        <button
+          type="submit"
+          className="h-24 w-24 rounded-full flex justify-center items-center bg-my-teal text-white font-bold"
+        >
+          Submit
+        </button>
+        <p className="pl-4">Thanks for reaching out!</p>
+      </div>
     </form>
   );
 }
