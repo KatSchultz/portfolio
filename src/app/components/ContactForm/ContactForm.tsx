@@ -31,18 +31,19 @@ export default function ContactForm() {
       <input
         type="text"
         name="user_name"
-        className="border-2 border-slate-700 my-2 w-full"
+        className="border-2 border-slate-700 my-2 w-full p-2"
       />
       <label>Email</label>
       <input
         type="email"
         name="user_email"
-        className="border-2 border-slate-700 my-2 w-full"
+        className="border-2 border-slate-700 my-2 w-full p-2"
       />
       <label>Message</label>
       <textarea
         name="message"
-        className="border-2 border-slate-700 my-2 w-full "
+        rows={4}
+        className="border-2 border-slate-700 my-2 w-full p-2 "
       />
       <div className="flex items-center">
         <button
