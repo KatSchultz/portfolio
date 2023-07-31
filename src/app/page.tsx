@@ -18,9 +18,9 @@ export default function Home() {
         <div className="flex flex-col justify-center items-start p-2">
           <h2 className="text-6xl">Hello</h2>
           <p className="w-80">
-            My background is in real estate and photography. Web development has
-            unlocked my creativity in ways I never expected. I`&apos`m always
-            looking forward to the next chalenge.
+            `My background is in real estate and photography. Web development has
+            unlocked my creativity in ways I never expected. I'm always
+            looking forward to the next chalenge.`
           </p>
           <NavBubbles />
         </div>
