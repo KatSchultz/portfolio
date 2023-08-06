@@ -23,7 +23,7 @@ export default function HamburgerMenu() {
       className="hamburger w-8 h-8 flex justify-around flex-col z-10 "
       onClick={() => setIsOpen(!isOpen)}
     >
-      {isOpen && <NavMenu />}
+      {isOpen && <NavMenu isOpen={isOpen} />}
       <div
         style={stylesBurger1}
         className="burger burger1 w-8 h-1 bg-slate-900 "
