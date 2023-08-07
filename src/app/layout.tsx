@@ -36,7 +36,7 @@ export default function RootLayout({
               <NavMenu isOpen={false} />
             </div>
           </header>
-          <div className="p-2 flex h-full">{children}</div>
+          <div className="p-4 flex h-full">{children}</div>
         </div>
       </body>
     </html>
