@@ -13,7 +13,7 @@ export default function NavMenu({ isOpen }: NavMenuProps) {
     >
       <ul
         className={`${
-          isOpen ? "nav-menu" : ""
+          isOpen ? "slide-up" : ""
         } flex h-48 w-48 flex-col justify-around items-center md:flex-row md:h-fit md:w-fit`}
       >
         {navOptions.map((option, index) => {

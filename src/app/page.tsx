@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex w-full p-4 justify-center items-center">
       <div className="flex ">
-        <div>
+        <div className="slide-left">
           <Image
             src={headshot}
             alt="Picture of Katie Schultz"

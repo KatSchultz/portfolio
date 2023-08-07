@@ -10,13 +10,12 @@ interface BubbleProps {
 export default function Bubble({ menuOption, index }: BubbleProps) {
   const styles = {
     backgroundColor: menuOption.color,
-    // border: `solid 1px ${menuOption.borderColor}`,
   };
   return (
     <Link href={menuOption.path}>
       <div
-        className={`bubble bubble-${index} h-24 w-24 rounded-full flex justify-center items-center`}
         style={styles}
+        className={`bubble bubble-${index} h-24 w-24 rounded-full flex justify-center font-bold items-center`}
       >
         {menuOption.name}
       </div>
