@@ -24,7 +24,7 @@ const projectImage = (name: string) => {
 
 export default function ProjectsPage() {
   return (
-    <div className="flex items-center flex-col w-full">
+    <div className="flex items-center flex-col w-full slide-left">
       <h2 className="font-bold text-3xl mb-4">PROJECTS</h2>
       <div className="flex flex-col items-center md:max-w-3xl lg:max-w-5xl">
         {projects.map((project) => (

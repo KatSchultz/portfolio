@@ -7,7 +7,7 @@ function Divider() {
 
 export default function ResumePage() {
   return (
-    <div className="flex items-center flex-col w-full">
+    <div className="flex items-center flex-col w-full fade-in">
       <h2 className="font-bold text-3xl mb-2">RESUME</h2>
       <div className="flex flex-col items-center md:max-w-3xl lg:max-w-5xl">
         <h3 className="font-bold text-xl mt-4">Professional Experience</h3>

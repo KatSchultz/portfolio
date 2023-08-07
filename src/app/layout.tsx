@@ -33,7 +33,7 @@ export default function RootLayout({
               <HamburgerMenu />
             </div>
             <div className="hidden md:flex">
-              <NavMenu />
+              <NavMenu isOpen={false} />
             </div>
           </header>
           <div className="p-4 flex h-full">{children}</div>
