@@ -1,5 +1,16 @@
 export const workExperience = [
   {
+    title: "JavaScript Teaching Assistant",
+    employer: "Grand Circus",
+    dates: "July 2023 - Present",
+    description: [
+      `Mentored students as they learned HTML, CSS, JavaScript, TypeScript, MongoDB, Express, and React, culminating in a
+      final project created with the MERN stack`,
+      `Provide feedback and grade student assignments submitted via Github pull requests`,
+      `Assisted students with setup, troubleshooting technical issues, and offered office hour support`,
+    ],
+  },
+  {
     title: "Front End Developer",
     employer: "eForms",
     dates: "February 2023 - June 2023",
@@ -14,11 +25,9 @@ export const workExperience = [
     employer: "Real Estate in the Pointes",
     dates: "August 2019 - February 2023",
     description: [
-      `Diagnose and address technical problems with software and social media use for agents`,
-      `Answer 25+ calls daily, manage emails, compose documents and schedule showing appointments for 32
-      agents`,
-      `Create flyers to advertise homes, order postcards and mailers to advertise for agents, manage social media
-      accounts for the office, significantly increasing our Instagram following`,
+      `Diagnosed and addressed technical problems with software and social media use for agents`,
+      `Efficiently handled a high volume of calls, emails, and scheduling tasks for 32 agents.`,
+      `Created advertising materials and managed social media accounts for the office, significantly increasing our Instagram following`,
     ],
   },
 ];
