@@ -19,7 +19,7 @@ export default function Home() {
           <h2 className="text-6xl pb-4">Hello</h2>
           <p className="max-w-sm pb-4">
             My background is in real estate and photography. Web development has
-            unlocked my creativity in ways I never expected. I'm always looking
+            unlocked my creativity in ways I never expected. I am always looking
             forward to the next chalenge.
           </p>
           <NavBubbles />
