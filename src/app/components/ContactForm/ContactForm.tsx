@@ -7,23 +7,23 @@ export default function ContactForm() {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
-    if (form.current) {
-      emailjs
-        .sendForm(
-          "service_xvk06y5",
-          "template_iqwfvfb",
-          form.current,
-          "KkDso4WOZLLM3b9if"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
+    // if (form.current) {
+    //   emailjs
+    //     .sendForm(
+    //       "service_xvk06y5",
+    //       "template_iqwfvfb",
+    //       form.current,
+    //       "KkDso4WOZLLM3b9if"
+    //     )
+    //     .then(
+    //       (result) => {
+    //         console.log(result.text);
+    //       },
+    //       (error) => {
+    //         console.log(error.text);
+    //       }
+    //     );
+    // }
   };
   return (
     <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full">
@@ -43,6 +43,7 @@ export default function ContactForm() {
       <textarea
         name="message"
         rows={4}
+        required
         className="border-2 border-slate-700 my-2 w-full p-2 "
       />
       <div className="flex items-center">
