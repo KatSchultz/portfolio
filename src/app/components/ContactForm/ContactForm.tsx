@@ -43,6 +43,7 @@ export default function ContactForm() {
       <textarea
         name="message"
         rows={4}
+        required
         className="border-2 border-slate-700 my-2 w-full p-2 "
       />
       <div className="flex items-center">
