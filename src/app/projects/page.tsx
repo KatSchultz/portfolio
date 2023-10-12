@@ -39,6 +39,7 @@ export default function ProjectsPage() {
                 alt={`Screenshot of ${project.name}`}
                 width={400}
                 height={400}
+                loading="lazy"
               ></Image>
             </div>
             <div className="project-text flex flex-col items-start justify-center p-2">
