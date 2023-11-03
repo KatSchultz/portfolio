@@ -17,8 +17,8 @@ export const projects = [
     name: "Card Sharks",
     description:
       "This is my third iteration of a card matching game. My first version was built as a group project using HTML, CSS, and JavaScript. After completing my bootcamp, I rebuilt the app using TypeScript and React. When my first developer job used Redux, I refactored again to replace most prop passing with Redux state management.",
-    githubLink: "https://github.com/KatSchultz/react-card-sharks",
-    liveLink: "https://react-card-sharks-katschultz.vercel.app/",
+    githubLink: "https://github.com/KatSchultz/redux-card-sharks",
+    liveLink: "https://card-sharks-redux.vercel.app/",
   },
   {
     name: "My Portfolio",
