@@ -1,11 +1,13 @@
-import React, { FormEvent, useRef } from "react";
+import React, { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const form = useRef(null);
+  const [showThanks, setShowThanks] = useState(false);
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
+    setShowThanks(true);
 
     if (form.current) {
       emailjs
@@ -49,11 +51,13 @@ export default function ContactForm() {
       <div className="flex items-center">
         <button
           type="submit"
-          className="h-24 w-24 rounded-full flex justify-center items-center bg-my-teal text-white font-bold"
+          className="bubble bubble-form h-24 w-24 rounded-full flex justify-center items-center bg-my-teal text-white font-bold"
         >
           Submit
         </button>
-        <p className="pl-4">Thanks for reaching out!</p>
+        <p className={`${showThanks ? "fade-in" : "hidden"} pl-4`}>
+          Thanks for reaching out!
+        </p>
       </div>
     </form>
   );

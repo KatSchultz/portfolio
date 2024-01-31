@@ -30,7 +30,6 @@ body {
     rgb(250, 250, 250),
     rgb(220, 255, 247)
   );
-
 }
 
 .bubble:hover {
@@ -62,6 +61,10 @@ body {
 
 .bubble-2:hover {
   border: solid 2px #00847b;
+}
+
+.bubble-form:hover {
+  border: solid 2px #013430;
 }
 
 .slide-up {
