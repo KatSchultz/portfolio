@@ -1,8 +1,18 @@
 export const workExperience = [
   {
+    title: "Support Engineer",
+    employer: "Rebuy Engine",
+    dates: "April 2024 - Present",
+    description: [
+      `Provide technical support for online merchants and partners, using JavaScript and CSS to provide custom solutions`,
+      `Troubleshooting issues with software and networks`,
+      `Creating and updating help documentation for internal and external use`,
+    ],
+  },
+  {
     title: "JavaScript Teaching Assistant",
     employer: "Grand Circus",
-    dates: "July 2023 - Present",
+    dates: "July 2023 - January 2024",
     description: [
       `Mentored students as they learned HTML, CSS, JavaScript, TypeScript, MongoDB, Express, and React, culminating in a
       final project created with the MERN stack`,
