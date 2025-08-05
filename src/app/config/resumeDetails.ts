@@ -1,8 +1,18 @@
 export const workExperience = [
   {
-    title: "Support Engineer",
+    title: "Launch Engineer",
     employer: "Rebuy Engine",
-    dates: "April 2024 - Present",
+    dates: "February 2025 - Present",
+    description: [
+      `Style shopping carts and product cross-sell widgets for online retail merchants, matching or accenting existing store branding`,
+      `Develop custom widget layouts and functionality suited to each merchant's requirements`,
+      `Document solutions to maintain an internal library of widgets, styles, and customizations`,
+    ],
+  },
+  {
+    title: "Overnight Support Engineer",
+    employer: "Rebuy Engine",
+    dates: "April 2024 - February 2025",
     description: [
       `Provide technical support for online merchants and partners, using JavaScript and CSS to provide custom solutions`,
       `Troubleshooting issues with software and networks`,
@@ -30,16 +40,16 @@ export const workExperience = [
       `Strong focus on quality assurance; created and maintained test cases and actively participated in code reviews for fellow developers`,
     ],
   },
-  {
-    title: "Office Administrator",
-    employer: "Real Estate in the Pointes",
-    dates: "August 2019 - February 2023",
-    description: [
-      `Diagnosed and addressed technical problems with software and social media use for agents`,
-      `Efficiently handled a high volume of calls, emails, and scheduling tasks for 32 agents.`,
-      `Created advertising materials and managed social media accounts for the office, significantly increasing our Instagram following`,
-    ],
-  },
+  // {
+  //   title: "Office Administrator",
+  //   employer: "Real Estate in the Pointes",
+  //   dates: "August 2019 - February 2023",
+  //   description: [
+  //     `Diagnosed and addressed technical problems with software and social media use for agents`,
+  //     `Efficiently handled a high volume of calls, emails, and scheduling tasks for 32 agents.`,
+  //     `Created advertising materials and managed social media accounts for the office, significantly increasing our Instagram following`,
+  //   ],
+  // },
 ];
 
 export const skills = [
@@ -47,14 +57,17 @@ export const skills = [
   "HTML",
   "CSS",
   "TypeScript",
+  "VUE",
+
+  "Liquid",
   "React",
   "Redux",
   "Next.JS",
   "Node.JS",
   "Express",
-  "Web APIs",
   "Git",
-  "MongoDB",
+  // "Web APIs",
+  // "MongoDB",
 ];
 
 export const education = [
