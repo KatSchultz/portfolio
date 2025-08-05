@@ -18,9 +18,16 @@ export default function Home() {
         <div className="flex flex-col justify-center items-start p-4">
           <h2 className="text-6xl pb-4">Hello</h2>
           <p className="max-w-sm pb-4">
-            My background is in real estate and photography. Web development has
-            unlocked my creativity in ways I never expected. I am always looking
-            forward to the next chalenge.
+            I’m a web developer dedicated to crafting memorable customer
+            experiences by pairing the right widgets with the right stores. Each
+            merchant brings their own vision, and I genuinely enjoy diving into
+            those custom requests that push creativity and problem-solving.
+          </p>
+          <p className="max-w-sm pb-4">
+            My journey began in interior design, photography, and real estate,
+            so I naturally see websites as digital environments. Like a
+            well-styled room, a great site should be thoughfully designed and
+            engaging.
           </p>
           <NavBubbles />
         </div>

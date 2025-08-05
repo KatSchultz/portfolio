@@ -21,7 +21,7 @@ export const navOptions = [
   {
     name: "Contact",
     path: "/contact",
-    color: "#b1fff9",
-    borderColor: "#00847b",
+    color: "#ffb1d3",
+    borderColor: "#ff519d",
   },
 ];

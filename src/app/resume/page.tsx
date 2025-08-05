@@ -13,13 +13,18 @@ export default function ResumePage() {
         <h3 className="font-bold text-xl mt-4">Professional Experience</h3>
         <Divider />
         {workExperience.map((job) => (
-          <div key={job.title} className="w-full mt-4">
+          <div
+            key={job.title}
+            className="w-full mt-4 bg-my-teal-light rounded-lg p-2 px-4 mx-4"
+          >
             <div className="flex flex-col md:flex-row md:justify-between">
               <div>
-                <h4 className="font-bold underline underline-offset-4">
+                <h4 className="font-bold text-xl border-b-2 border-b-black pr-4">
                   {job.title}
                 </h4>
-                <h4 className="font-bold">{job.employer}</h4>
+                <h4 className="font-bold opacity-60 uppercase">
+                  {job.employer}
+                </h4>
               </div>
               <h5 className="italic">{job.dates}</h5>
             </div>

@@ -27,12 +27,14 @@ export default function ProjectsPage() {
     <div className="flex items-center flex-col w-full slide-left">
       <h2 className="font-bold text-3xl mb-4">PROJECTS</h2>
       <div className="flex flex-col items-center md:max-w-3xl lg:max-w-5xl">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <section
             key={project.name}
-            className="flex flex-col md:flex-row mb-2"
+            className={`${
+              index % 2 != 0 ? "md:flex-row-reverse" : ""
+            } project-card flex flex-col md:flex-row mb-6 mx-auto bg-white p-4 md:p-8 rounded-2xl`}
           >
-            <div className="min-w-1/2 flex justify-start md:justify-end p-2">
+            <div className="project-image-container min-w-1/2 flex justify-center md:justify-start p-2">
               <Image
                 src={projectImage(project.name)}
                 className="shadow-lg"
@@ -42,7 +44,11 @@ export default function ProjectsPage() {
                 loading="lazy"
               ></Image>
             </div>
-            <div className="project-text flex flex-col items-start justify-center p-2">
+            <div
+              className={`${
+                index % 2 != 0 ? "md:items-end md:text-right" : ""
+              } project-text flex flex-col items-center md:items-start justify-center text-center md:text-left p-2`}
+            >
               <h3 className="font-bold text-xl mb-2">{project.name}</h3>
               <p className="pb-2">{project.description}</p>
               <div className="links flex  text-my-teal font-bold">
