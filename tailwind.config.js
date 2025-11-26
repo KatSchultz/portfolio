@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "my-teal": "#00988d",
         "my-teal-light": "#ccecec",
+        "my-off-white": "rgba(255, 255, 255, .9)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

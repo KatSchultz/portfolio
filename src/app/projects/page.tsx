@@ -32,7 +32,7 @@ export default function ProjectsPage() {
             key={project.name}
             className={`${
               index % 2 != 0 ? "md:flex-row-reverse" : ""
-            } project-card flex flex-col md:flex-row mb-6 mx-auto bg-white p-4 md:p-8 rounded-2xl`}
+            } project-card flex flex-col md:flex-row mb-6 mx-auto bg-my-off-white p-4 md:p-8 rounded-2xl`}
           >
             <div className="project-image-container min-w-1/2 flex justify-center md:justify-start p-2">
               <Image

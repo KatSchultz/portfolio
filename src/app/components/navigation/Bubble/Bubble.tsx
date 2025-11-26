@@ -16,7 +16,7 @@ export default function Bubble({ menuOption, index }: BubbleProps) {
     <Link href={menuOption.path}>
       <div
         style={styles}
-        className={`bubble bubble-${index} h-12 max-w-1/3 rounded-full flex justify-center font-bold items-center`}
+        className={`bubble bubble-${index} h-12 max-w-1/3 rounded-full flex justify-center font-bold items-center text-white`}
       >
         {menuOption.name}
       </div>

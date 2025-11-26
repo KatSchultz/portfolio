@@ -9,19 +9,19 @@ export const navOptions = [
   {
     name: "Resume",
     path: "/resume",
-    color: "#b2b1ff",
+    color: "#15b0a5",
     borderColor: "#790096",
   },
   {
     name: "Projects",
     path: "/projects",
-    color: "#ffb1b1",
+    color: "#f75e5e",
     borderColor: "#860000",
   },
   {
     name: "Contact",
     path: "/contact",
-    color: "#ffb1d3",
+    color: "#e14288",
     borderColor: "#ff519d",
   },
 ];
