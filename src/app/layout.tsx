@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex`}>
         <div className="w-screen flex flex-col">
-          <header className="w-full justify-between flex p-2">
+          <header className="w-full justify-between flex p-3 bg-my-off-white">
             <Link href="/">
               <div className="flex justify-end items-center">
                 <div className="h-6 w-6 rounded-full bg-my-teal pr-4"></div>

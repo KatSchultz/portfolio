@@ -15,20 +15,20 @@ export default function ResumePage() {
         {workExperience.map((job) => (
           <div
             key={job.title}
-            className="w-full mt-4 bg-my-teal-light rounded-lg p-2 px-4 mx-4"
+            className="w-full mt-4 bg-white rounded-lg p-2 px-4 mx-4"
           >
             <div className="flex flex-col md:flex-row md:justify-between">
               <div>
-                <h4 className="font-bold text-xl border-b-2 border-b-black pr-4">
+                <h4 className="role-title font-bold text-xl border-b-2 border-b-black pr-4">
                   {job.title}
                 </h4>
-                <h4 className="font-bold opacity-60 uppercase">
+                <h4 className="role-employer font-bold opacity-60 uppercase">
                   {job.employer}
                 </h4>
               </div>
               <h5 className="italic">{job.dates}</h5>
             </div>
-            <ul className="list-disc list-inside">
+            <ul className="role-description list-disc list-inside">
               {job.description.map((detail, index) => (
                 <li className="my-2" key={index}>
                   {detail}

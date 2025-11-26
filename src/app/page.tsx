@@ -5,7 +5,7 @@ import NavBubbles from "./components/navigation/NavBubbles/NavBubbles";
 export default function Home() {
   return (
     <div className="flex w-full p-4 justify-center items-center">
-      <div className="flex flex-col md:flex-row">
+      <div className="home-content p-4 flex flex-col md:flex-row md:p-8 bg-my-off-white rounded-2xl max-w-full">
         <div className="slide-left">
           <Image
             src={headshot}
